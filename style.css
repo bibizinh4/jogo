@@ -1,0 +1,110 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Azul claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Título */
+h1 {
+    margin: 20px 0;
+    color: #0d47a1; /* Azul escuro */
+}
+
+/* Seção de perguntas */
+#question-section {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1565c0; /* Azul médio */
+}
+
+#question-select {
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #42a5f5; /* Azul mais forte */
+    border-radius: 5px;
+    color: #0d47a1;
+    background-color: #bbdefb; /* Azul suave */
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #1976d2; /* Azul primário */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1565c0; /* Azul mais escuro */
+}
+
+button:active {
+    background-color: #0d47a1; /* Azul ainda mais escuro */
+}
+
+/* Tabuleiro do jogo */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Estilo dos personagens */
+.character {
+    background-color: #90caf9; /* Azul claro */
+    border: 2px solid #42a5f5; /* Azul médio */
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    color: #0d47a1; /* Azul escuro */
+    font-weight: bold;
+}
+
+.character:hover {
+    background-color: #42a5f5; /* Azul mais forte */
+    transform: scale(1.05);
+}
+
+.character:active {
+    background-color: #1e88e5; /* Azul intermediário */
+}
+
+/* Estilo do botão de reiniciar */
+button#reset {
+    margin-top: 10px;
+    background-color: #d32f2f; /* Vermelho forte para contraste */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button#reset:hover {
+    background-color: #c62828;
+}
+
+/* Exibição de chances restantes */
+#chances-display {
+    font-size: 18px;
+    color: #d32f2f; /* Vermelho para destacar o texto */
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 5px 10px;
+    border: 2px solid #d32f2f;
+    border-radius: 5px;
+    background-color: #ffcdd2; /* Fundo vermelho claro */
+}

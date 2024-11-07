@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Cara a Cara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jogo Cara a Cara</h1>
+    
+    <!-- Seção de perguntas -->
+    <div id="question-section">
+        <h2>Faça uma Pergunta:</h2>
+        <select id="question-select">
+            <option value="hair">Tem cabelo loiro?</option>
+            <option value="glasses">Usa óculos?</option>
+            <option value="eyes">Tem olhos azuis?</option>
+            <option value="hat">Usa chapéu?</option>
+            <!-- Novas opções de perguntas -->
+            <option value="gender">É mulher?</option>
+            <option value="position">O personagem está no fundo?</option>
+        </select>
+        <button onclick="askQuestion()">Perguntar</button>
+    </div>
+
+    <!-- Exibição de chances restantes -->
+    <div id="chances-display">Chances restantes: 3</div>
+
+    <!-- Tabuleiro do jogo -->
+    <div id="game-board"></div>
+    <button onclick="resetGame()">Reiniciar Jogo</button>
+    <p id="remaining-guesses">Chances restantes: 3</p>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
